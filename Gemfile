@@ -30,4 +30,5 @@ group :test do
   gem 'rspec-rails'
   gem 'shoulda'
   gem 'cucumber-rails'
+  gem 'fabrication'
 end
