@@ -29,4 +29,5 @@ gem 'mysql2'
 group :test do
   gem 'rspec-rails'
   gem 'shoulda'
+  gem 'cucumber-rails'
 end
