@@ -6,6 +6,8 @@ gem 'rails', '3.0.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
+gem 'decent_exposure'
+gem 'haml-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -26,7 +28,9 @@ gem 'mysql2'
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
-group :test do
+group :development, :test do
+  gem 'capybara'
+  gem 'database_cleaner'
   gem 'rspec-rails'
   gem 'shoulda'
   gem 'cucumber-rails'

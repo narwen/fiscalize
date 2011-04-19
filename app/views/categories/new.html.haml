@@ -1,0 +1,6 @@
+= form_for category, url: [category] do |f|
+  = f.label :name
+  = f.text_field :name
+  = f.label :slug, "URL"
+  = f.text_field :slug
+  = f.submit "Create"
