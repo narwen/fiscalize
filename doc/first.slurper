@@ -1,0 +1,335 @@
+
+==
+story_type:
+  feature
+name:
+  User reports an incident
+description:
+  In order to share an incident
+  As a user on the home page
+  I want to report an incident
+
+  - On the home page
+  - click add incident:
+    - title (*)
+    - description
+
+labels:
+  incident
+==
+story_type:
+  feature
+name:
+  User uploads photo to an incident
+description:
+  In order to add details to an incident
+  As a user on the new incident page
+  I want add photo
+
+  - One photo per incident (*)
+
+labels:
+  incident
+==
+story_type:
+  feature
+name:
+  User provides location to an incident
+description:
+  In order to provide details to an incident
+  As a user on the new incident page
+  I want provide a location
+
+  - user provides a location (address, city, state / lat-lng)
+  - service look up for lat/lng (*)
+  - user confirms location
+  - lat/lng is stored on incident
+
+labels:
+  incident, maps
+==
+story_type:
+  feature
+name:
+  User provides tag to an incident
+description:
+  In order to organize incidents
+  As a user on the new incident page
+  I want to provide tags
+
+  - comma separated
+
+labels:
+  incident, tags
+
+==
+story_type:
+  feature
+name:
+  User removes tag from an incident
+description:
+  In order to properly organize incidents
+  As a user on the new incident page
+  I want to remove a tag
+
+  - user should able to remove a tag by clicking in a (x) marker close to the name
+
+labels:
+  incident, tags
+
+==
+story_type:
+  feature
+name:
+  System formats tags
+description:
+  In order to easily add tags to an incident
+  As a user on the new incident page
+  I want to add tags
+
+  - user fill tags separated by comma
+  - when a comma is provided, system creates a label for tag
+
+labels:
+  incident, tags
+
+
+==
+story_type:
+  feature
+name:
+  Last added incidents
+description:
+  In order to track incidents
+  As a user on the home page
+  I want to see the latest incidents
+
+  - table:
+  | title | location | thumbnail |
+
+labels:
+  incidents
+==
+story_type:
+  feature
+name:
+  System creates thumbnail
+description:
+  - user uploads an image
+  - system generates thumbnail
+
+labels:
+  images
+
+==
+story_type:
+  chore
+name:
+  Provides dimension for thumbnail
+description:
+
+
+labels:
+
+==
+story_type:
+  feature
+name:
+  Incidents on the map
+description:
+  In order to see all incidents
+  As a user on the home page
+  I want to see a map with all incidents
+
+  - system displays a map
+  - map has a marker to each incident
+
+labels:
+  map
+
+==
+story_type:
+  feature
+name:
+  User reports incidents from the map
+description:
+  In order to easily report an incident
+  As a user on the home page
+  I want add a incident from the map
+
+  - user look up for an address
+  - system add a marker on the lat/lng
+  - marker has a info with form to add incident
+
+labels:
+  map, incident
+
+==
+story_type:
+  feature
+name:
+  System displays map based on current location
+description:
+  In order to see incidents
+  As a user on the home page
+  I want to see the map based on my location
+
+  - system finds user location
+  - map bounds will be closer to current location
+
+labels:
+  map
+
+==
+story_type:
+  feature
+name:
+  User adds comment in an incident
+description:
+  In order to provide info about an incident
+  As a user on the incident show page
+  I want add a comment
+
+
+labels:
+  comment
+
+==
+story_type:
+  feature
+name:
+  User rates an incident
+description:
+  In order to prioritize an incident
+  As a user on the incident show page
+  I want to up/down vote an incident
+
+labels:
+  vote
+
+==
+story_type:
+  feature
+name:
+  User views votes to an incident
+description:
+  In order to view incident details
+  As a user on the incident show page
+  I want see how number of up/down votes
+
+labels:
+  vote
+==
+story_type:
+  feature
+name:
+  User views incident show page
+description:
+  In order to view incident details
+  As a user on the incident show page
+  I want see info about an incident
+
+  - title
+  - description
+  - tags
+
+labels:
+  incident
+  
+==
+story_type:
+  feature
+name:
+  User views incident show page
+description:
+  In order to view incident details
+  As a user on the incident show page
+  I want see info about an incident
+
+  - title
+  - description
+  - tags
+
+labels:
+  incident
+  
+==
+story_type:
+  feature
+name:
+  User views comments to an incident
+description:
+  In order to view incident details
+  As a user on the incident show page
+  I want to see all comments to an incident
+
+labels:
+  comment
+
+==
+story_type:
+  chore
+name:
+  Authentication via facebook
+description:
+  
+
+labels:
+==
+story_type:
+  feature
+name:
+  User sign in
+description:
+  In order to report an incident
+  As a user
+  I want sign in
+
+  - system authenticate via facebook
+
+labels:
+  sign_in
+  
+==
+story_type:
+  feature
+name:
+  User share incident report on Facebook
+description:
+  In order to share an incident report
+  As a user
+  I want to add incident on my FB's wall
+
+labels:
+  facebook
+  
+==
+story_type:
+  feature
+name:
+  User views last week top tags
+description:
+  In order to find the most famous topics
+  As a user
+  I want too view top tags
+
+  - system displays top 10 tags (weekly)
+
+labels:
+  tags
+  
+==
+story_type:
+  feature
+name:
+  User views last month top tags
+description:
+  In order to find the most famous topics
+  As a user
+  I want too view top tags
+
+  - system displays top 10 tags (monthly)
+
+labels:
+  tags
+  
